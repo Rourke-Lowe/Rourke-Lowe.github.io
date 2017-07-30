@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Website">
-    <meta name="author" content="Rourke">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <title>Rourke Lowe</title>
 
@@ -15,9 +15,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
+        <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -31,32 +31,38 @@
 
 </head>
 
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand page-scroll" href="#page-top">RL</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                        <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
+                        <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#Work">Work</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#Contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Life">Life</a>
                     </li>
                 </ul>
             </div>
@@ -65,29 +71,25 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Rourke Lowe</h1>
-                        <p class="intro-text">Business Analysis. Product Design.</p>
-                        <a href="#projects" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Rourke Lowe</h1>
+                    <a class="btn btn-default page-scroll" href="#about">._.</a>
                 </div>
             </div>
         </div>
-    </header>
-<!-- Projects Section -->
-    <section id="projects" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Projects</h2>
+    </section>
 
-               <p><div class="card-deck">
+    <!-- About Section -->
+    <section id="Work" class="work-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Work</h1>
+                                   <p><div class="card-deck">
   <div class="card">
     <img class="card-img-top" src="img/cc.jpg" alt="Card image cap">
     <div class="card-block">
@@ -120,31 +122,18 @@
     </div>
   </div>
 </div>
-                   <p>
-                       
+                </div>
             </div>
         </div>
     </section>
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About me</h2>
-                <p>Focus towards product design. In love with understanding customer wants and needs. </p>
-                <p>I'm a student at the John Molson School of Business studying Business Technology Management. I have a passion for learning how new technologies can morph our understanding of traditional business practices.
-               </p> <p>Still in the learning phase of my career, I look forward everyday to unveiling layers of thought behind business strategy.  </p>
-                <p> Thorougly enjoying the wave of life. There are times where I find the blueprint laid bare. Other times stuck in a morphing maze. The core reason underlying my focus: I feel these feelings are shared among many. What drives me is helping people do the things they want to be doing, easier. 
-                <p> I'm an avid writer, music appreciator, Dota'er, boxer, and ultimate frisbee player. </p>
-                <p> Beyond the scope of superficial understanding, underlying assumptions are the basis to our every thought. I believe questioning and testing these assumptions greatly benefits the self and collective. Even viewing my website has probably given you a set of assumptions with which you will base my 'character' off of. I would love if you sent me a message to test these assumptions!</p>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>contact</h2>
-                <p> I love to bounce ideas and learn new things. Just shoot me a message to say hello! </p>
+
+    <!-- Services Section -->
+    <section id="Contact" class="Contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact</h1>
+                     <p> I love to bounce ideas and learn new things. Just shoot me a message to say hello! </p>
                 <p><a href="mailto:rourke.lowe.eng@gmail.com">Rourke.lowe.eng@gmail.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
@@ -158,18 +147,27 @@
                         <a href="https://www.instagram.com/___rourke___/ " class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
                     </li>
                 </ul>
+                </div>
             </div>
         </div>
     </section>
 
-   
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            
+    <!-- Contact Section -->
+    <section id="Life" class="life-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Life</h1>
+                <p>Focus towards product design. In love with understanding customer needs and wants. </p>
+                <p>I'm a student at the John Molson School of Business studying Business Technology Management. I have a passion for learning how new technologies can morph our understanding of traditional business practices.
+               </p> <p>Still in the learning phase of my career, I look forward everyday to unveiling layers of thought behind business strategy.  </p>
+                <p> Thorougly enjoying the wave of life. There are times where I find the blueprint laid bare. Other times stuck in a morphing maze. The core reason underlying my focus: I feel these feelings are shared among many. What drives me is helping people do the things they want to be doing, easier. 
+                <p> I'm an avid writer, music appreciator, Dota'er, boxer, and ultimate frisbee player. </p>
+                <p> Beyond the scope of superficial understanding, underlying assumptions are the basis to our every thought. I believe questioning and testing these assumptions greatly benefits the self and collective. Even viewing my website has probably given you a set of assumptions with which you will base my 'character' off of. I would love if you sent me a message to test these assumptions!</p>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -177,14 +175,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
+    <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 
 </body>
 
