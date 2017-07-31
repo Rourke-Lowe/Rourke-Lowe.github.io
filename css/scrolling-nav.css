@@ -30,27 +30,27 @@ html {
 .intro-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
+    text-align: left;
     background-color: #93341c;
 }
 
 .work-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
+    text-align: left;
     background-color: #825f41;
 }
 
 .contact-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
+    text-align: left;
     background-color: #3d3737;
 }
 
 .life-section {
     height: 100%;
     padding-top: 150px;
-    text-align: right;
+    text-align: left;
     background-color: #717482;
 }
