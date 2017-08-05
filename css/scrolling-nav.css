@@ -26,30 +26,32 @@ html {
         padding: 0;
     }
 }
-
+p {
+    position: absolute;
+}
 .intro-section {
-    height: 75%;
+    height: 90%;
     padding-top: 150px;
     text-align: left;
     background-color: #93341c;
 }
 
 .work-section {
-    height: 75%;
+    height: 90%;
     padding-top: 100px;
     text-align: left;
     background-color: #825f41;
 }
 
 .contact-section {
-    height: 75%;
+    height: 90%;
     padding-top: 150px;
     text-align: left;
     background-color: #3d3737;
 }
 
 .life-section {
-    height: 75%;
+    height: 90%;
     padding-top: 100px;
     text-align: left;
     background-color: #717482;
