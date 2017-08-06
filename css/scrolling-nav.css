@@ -27,7 +27,14 @@ html {
         padding: 0;
     }
 }
-
+#RourkeLowe{
+    font-family: 'Lora', serif;
+    font-size: 52px;
+    top: 30%;
+    width: 40%
+    padding: 5px 20px;
+    position: relative;
+}
 .intro-section { 
     height: 90%;
     padding-top: 150px;
