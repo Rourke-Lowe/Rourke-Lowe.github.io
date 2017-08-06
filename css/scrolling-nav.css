@@ -16,6 +16,7 @@ html {
 
 @media(min-width:767px) {
     .navbar {
+        background-color: #ACADA9;
         padding: 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -26,10 +27,8 @@ html {
         padding: 0;
     }
 }
-p {
-    position: absolute;
-}
-.intro-section {
+
+.intro-section { 
     height: 90%;
     padding-top: 150px;
     text-align: left;
