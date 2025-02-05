@@ -16,7 +16,7 @@ const AchievementCard = ({ logo, achievement, organization, date }: AchievementC
           <img src={logo} alt={organization} className="w-full h-full object-cover" />
         </div>
         <div>
-          <h3 className="font-medium">{achievement}</h3>
+          <h3 className="font-medium text-black">{achievement}</h3>
           <p className="text-gray-600">{organization}</p>
         </div>
       </div>

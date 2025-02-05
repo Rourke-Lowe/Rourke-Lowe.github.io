@@ -7,10 +7,10 @@ import AchievementsSection from '@/components/home/Achievements/AchievementsSect
 
 export default function Home() {
   const profileData = {
-    name: "Alt Roourke",
-    title: "Digital Product Designer",
-    location: "San Francisco, CA",
-    imageUrl: "/api/placeholder/256/256"
+    name: "Rourke Lowe",
+    title: "Product Manager",
+    location: "Montreal, QC | Toronto, ON",
+    imageUrl: "/images/profileimg.jpeg",
   };
 
   return (
@@ -20,9 +20,10 @@ export default function Home() {
         profile={<ProfileContainer {...profileData} />}
         content={
           <>
-            <Hero 
-              headline="Passionate creating great experiences for Digital Product"
-            />
+          <Hero 
+            headline="A generalist with a focus on product."
+            subtitle="My approach to product, and life, is centered around listening and being creative. For me, listening comes from a curiosity to understand what makes people tick, and creativity comes from being open. Both benefit from lots of practice."
+          />
             <ExperienceSection />
             <AchievementsSection />
           </>
@@ -30,4 +31,4 @@ export default function Home() {
       />
     </main>
   );
-}
+} 
