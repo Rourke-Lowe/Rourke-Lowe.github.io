@@ -12,13 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: 'Rourke Lowe',  // title
+export const metadata: Metadata = {
+  title: 'Rourke Lowe',
   description: 'Product Manager based in Canada',
   icons: {
-    icon: '/images/favicon.ico', // tab image
+    icon: '/images/favicon.ico',
   },
-
 }
 
 export default function RootLayout({
