@@ -3,7 +3,6 @@ import Navigation from '@/components/layout/Navigation';
 import ProfileContainer from '@/components/home/Profile/ProfileContainer';
 import Hero from '@/components/home/Hero/Hero';
 import ExperienceSection from '@/components/home/Experience/ExperienceSection';
-import AchievementsSection from '@/components/home/Achievements/AchievementsSection';
 
 export default function Home() {
   const profileData = {

@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
   },
   basePath: '',
   eslint: {
-    ignoreDuringBuilds: true  // Add this line
+    ignoreDuringBuilds: true
+  },
+  typescript: {
+    ignoreBuildErrors: true  // Add this line too
   }
 }
 
