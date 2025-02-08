@@ -1,5 +1,5 @@
-import { Github, Linkedin, Mail, Globe , Instagram} from 'lucide-react';
-
+import { Linkedin, Mail, Instagram } from 'lucide-react';
+// Remove Github and Globe since they're not being used
 
 const Navigation = () => {
   return (
@@ -8,7 +8,6 @@ const Navigation = () => {
         <span className="text-2xl"></span>
 
         <div className="hidden md:flex items-center space-x-8">
-          {/* Social Icons */}
           <a 
             href="https://www.instagram.com/___rourke___/" 
             target="_blank" 
@@ -32,7 +31,6 @@ const Navigation = () => {
             <Mail size={24} />
           </a>
         </div>
-
       </div>
     </nav>
   );

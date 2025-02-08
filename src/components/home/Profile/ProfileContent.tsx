@@ -1,20 +1,22 @@
-// Server Component
 import React from 'react';
+import Image from 'next/image';
 
 interface ProfileContentProps {
   name: string;
   title: string;
   location: string;
-  imageUrl: string;
+  // Remove imageUrl since it's not being used
 }
 
-const ProfileContent = ({ name, title, location, imageUrl }: ProfileContentProps) => {
+const ProfileContent = ({ name, title, location }: ProfileContentProps) => {
   return (
     <div className="space-y-6">
       <div className="w-64 h-64 rounded-3xl overflow-hidden">
-        <img 
+        <Image 
           src="/images/profileimg.jpeg" 
           alt={`${name}'s profile`} 
+          width={256}
+          height={256}
           className="w-full h-full object-cover"
         />
       </div>
