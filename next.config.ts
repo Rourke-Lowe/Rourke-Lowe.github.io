@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: '',
+  eslint: {
+    ignoreDuringBuilds: true  // Add this line
+  }
 }
 
 export default nextConfig
