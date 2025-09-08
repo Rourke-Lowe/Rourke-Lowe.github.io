@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/rourkelowe/Coding/roourke/Rourke-Lowe.github.io/logs/.94d6bcff9f539ad2649874d778e145f256008241-audit.json",
+    "files": [
+        {
+            "date": 1757363640595,
+            "name": "/Users/rourkelowe/Coding/roourke/Rourke-Lowe.github.io/logs/mcp-puppeteer-2025-09-08.log",
+            "hash": "77569d844d637065b20df92905eb999360ae1c077c108b631ebbe1edaa85c9ff"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero = ({ headline, subtitle }: HeroProps) => {
   return (
-    <div className="space-y-12 pt-20 pb-20">
+    <div className="space-y-12 pt-20 pb-8">
       <div className="space-y-4">  {/* Added container for headline and subtitle */}
         <h2 className="text-6xl font-serif max-w-2xl">{headline}</h2>
         {subtitle && (
