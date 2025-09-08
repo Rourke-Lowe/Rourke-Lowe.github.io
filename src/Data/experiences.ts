@@ -19,19 +19,12 @@ export const experiences: Experience[] = [
 
   {
     logo: "/images/clearco-logo.png",
-    role: "Senior Finance Operations",
+    role: "Senior Finance Operations/Partnerships Manager",
     company: "Clearco",
-    period: "2020-2021",
-    description: "Owner of inter-departmental FPnA. Drove implementation of two system implementations."
+    period: "2019-2021",
+    description: "Owner of inter-departmental FPnA. Drove implementation of two system implementations. Headed creation of Fractional CFO & Accountant partnerships channel."
   },
 
-  {
-    logo: "/images/clearco-logo.png",
-    role: "Partnerships Manager",
-    company: "Clearco",
-    period: "2019 - 2020",
-    description: "Headed creation of Fractional CFO & Accountant partnerships channel."
-  },
   {
     logo: "/images/peersight.jpeg",
     role: "Growth Product",
