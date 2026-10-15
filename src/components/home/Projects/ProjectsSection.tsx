@@ -3,10 +3,20 @@
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 import { projects } from '@/Data/projects';
+import ProjectModal from './ProjectModal';
 
 const ProjectsSection = () => {
   const stripRef = useRef<HTMLDivElement>(null);
+  const cardRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const [active, setActive] = useState(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  // Return focus to the card for the project that was last on screen
+  const handleModalClose = () => {
+    const last = openIndex;
+    setOpenIndex(null);
+    if (last !== null) cardRefs.current[last]?.focus();
+  };
 
   const scroll = (direction: 1 | -1) => {
     stripRef.current?.scrollBy({ left: direction * 340, behavior: 'smooth' });
@@ -54,23 +64,31 @@ const ProjectsSection = () => {
         onScroll={handleScroll}
         className="no-scrollbar flex gap-3 lg:gap-4 overflow-x-auto snap-x snap-mandatory -mx-5 px-5 scroll-px-5 lg:mx-0 lg:px-0 lg:scroll-px-0 pb-1"
       >
-        {projects.map((project) => (
-          <div
+        {projects.map((project, index) => (
+          <button
             key={project.title}
-            className="flex-none basis-[82%] lg:basis-[calc(46%-8px)] snap-start bg-gray-50 rounded-2xl overflow-hidden hover:bg-gray-100 transition-colors"
+            ref={(el) => {
+              cardRefs.current[index] = el;
+            }}
+            type="button"
+            aria-haspopup="dialog"
+            onClick={() => setOpenIndex(index)}
+            className="group flex-none basis-[82%] lg:basis-[calc(46%-8px)] snap-start text-left bg-gray-50 rounded-2xl overflow-hidden hover:bg-gray-100 transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-gray-400"
           >
-            <Image
-              src={project.image}
-              alt={project.imageAlt}
-              width={1200}
-              height={900}
-              className="w-full aspect-[4/3] object-cover"
-            />
-            <div className="px-4 pt-3.5 pb-[18px] lg:px-5 lg:pt-4 lg:pb-5">
-              <h3 className="font-medium text-black">{project.title}</h3>
-              <p className="text-gray-500 text-sm mt-1.5 leading-relaxed">{project.description}</p>
-            </div>
-          </div>
+            <span className="block overflow-hidden">
+              <Image
+                src={project.image}
+                alt={project.imageAlt}
+                width={1200}
+                height={900}
+                className="w-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:transition-none"
+              />
+            </span>
+            <span className="block px-4 pt-3.5 pb-[18px] lg:px-5 lg:pt-4 lg:pb-5">
+              <span className="block font-medium text-black">{project.title}</span>
+              <span className="block text-gray-500 text-sm mt-1.5 leading-relaxed">{project.description}</span>
+            </span>
+          </button>
         ))}
       </div>
       <div className="flex justify-center gap-1.5 mt-3.5 lg:hidden" aria-hidden="true">
@@ -81,6 +99,12 @@ const ProjectsSection = () => {
           />
         ))}
       </div>
+      <ProjectModal
+        projects={projects}
+        index={openIndex}
+        onClose={handleModalClose}
+        onNavigate={setOpenIndex}
+      />
     </div>
   );
 };

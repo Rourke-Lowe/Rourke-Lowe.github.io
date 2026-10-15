@@ -12,6 +12,10 @@ export interface Experience {
     description: string;
     image: string;
     imageAlt: string;
+    // Uncropped, larger version shown in the project modal
+    detailImage: string;
+    detailWidth: number;
+    detailHeight: number;
   }
 
   export interface Achievement {

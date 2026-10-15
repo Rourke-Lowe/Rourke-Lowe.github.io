@@ -14,6 +14,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Project modal: panel rises in, backdrop fades, content cross-fades between projects */
+@keyframes modal-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.985); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-panel { animation: modal-in 0.22s ease-out; }
+.modal-swap { animation: fade-in 0.18s ease-out; }
+.project-modal::backdrop { animation: fade-in 0.2s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-panel,
+  .modal-swap,
+  .project-modal::backdrop { animation: none; }
+}
+
 @layer utilities {
   .no-scrollbar {
     scrollbar-width: none;
