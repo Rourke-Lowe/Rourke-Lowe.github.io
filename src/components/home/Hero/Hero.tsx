@@ -9,11 +9,11 @@ interface HeroProps {
 
 const Hero = ({ headline, subtitle }: HeroProps) => {
   return (
-    <div className="space-y-12 pt-20 pb-8">
-      <div className="space-y-4">  {/* Added container for headline and subtitle */}
-        <h2 className="text-6xl font-serif max-w-2xl">{headline}</h2>
+    <div className="pt-10 lg:pt-20">
+      <div className="space-y-4">
+        <h2 className="text-[42px] leading-[1.12] lg:text-6xl lg:leading-tight font-serif max-w-2xl text-balance">{headline}</h2>
         {subtitle && (
-          <p className="text-xl text-gray-400 max-w-2xl">{subtitle}</p>
+          <p className="text-lg lg:text-xl text-gray-500 max-w-2xl leading-normal">{subtitle}</p>
         )}
       </div>
     </div>

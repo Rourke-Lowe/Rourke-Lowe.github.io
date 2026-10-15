@@ -7,7 +7,9 @@ interface ProfileContainerProps {
   name: string;
   title: string;
   location: string;
+  note: string;
   imageUrl: string;
+  mobileImageUrl: string;
 }
 
 const ProfileContainer = (props: ProfileContainerProps) => {
@@ -15,7 +17,7 @@ const ProfileContainer = (props: ProfileContainerProps) => {
     <>
       {/* Mobile Layout (default) */}
       <div className="block lg:hidden">
-        <div className="mb-20">
+        <div className="mt-2">
           <ProfileContent {...props} />
         </div>
       </div>

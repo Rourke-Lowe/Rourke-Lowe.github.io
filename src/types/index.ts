@@ -3,9 +3,17 @@ export interface Experience {
     role: string;
     company: string;
     period: string;
-    description: string;
+    summary: string;
+    highlights: string[];
   }
-  
+
+  export interface Project {
+    title: string;
+    description: string;
+    image: string;
+    imageAlt: string;
+  }
+
   export interface Achievement {
     logo: string;
     achievement: string;

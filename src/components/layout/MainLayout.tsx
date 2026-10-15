@@ -9,7 +9,7 @@ interface MainLayoutProps {
 
 const MainLayout = ({ profile, content }: MainLayoutProps) => {
   return (
-    <div className="px-8">
+    <div className="px-5 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="lg:grid lg:grid-cols-12 lg:gap-12">
           {/* Left Column - Profile */}

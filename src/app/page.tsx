@@ -4,13 +4,17 @@ import ProfileContainer from '@/components/home/Profile/ProfileContainer';
 import Hero from '@/components/home/Hero/Hero';
 import ResumeButton from '@/components/home/ResumeButton';
 import ExperienceSection from '@/components/home/Experience/ExperienceSection';
+import ProjectsSection from '@/components/home/Projects/ProjectsSection';
+import Footer from '@/components/layout/Footer';
 
 export default function Home() {
   const profileData = {
     name: "Rourke Lowe",
     title: "Product Manager",
-    location: "Canada - Montreal, QC | Toronto, ON",
-    imageUrl: "/images/profileimg.jpeg",
+    location: "Victoria, BC",
+    note: "Remote, open to travel",
+    imageUrl: "/images/profile.jpg",
+    mobileImageUrl: "/images/profile-mobile.jpg",
   };
 
   return (
@@ -20,12 +24,16 @@ export default function Home() {
         profile={<ProfileContainer {...profileData} />}
         content={
           <>
-          <Hero 
-            headline="A generalist with a focus on product."
-            subtitle="My approach to product, and life, is centered around listening and being creative. For me, listening comes from a curiosity to understand what makes people tick, and creativity comes from being open. Both benefit from lots of practice."
-          />
-            <ResumeButton />
+            <Hero
+              headline="I take ideas from zero to one."
+              subtitle="I love where digital & physical experiences merge into a holistic vibe."
+            />
+            <div className="pt-6 pb-14 lg:pt-8 lg:pb-16">
+              <ResumeButton />
+            </div>
             <ExperienceSection />
+            <ProjectsSection />
+            <Footer />
           </>
         }
       />

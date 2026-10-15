@@ -1,0 +1,25 @@
+import { Project } from '@/types';
+
+export const projects: Project[] = [
+  {
+    title: "Delphi Cinema",
+    description: "Built the operating model for an independent cinema, then led the website that sells its tickets.",
+    image: "/images/make-delphi.jpg",
+    imageAlt: "The Delphi Cinema website next to a printed ticket",
+  },
+
+  {
+    title: "Album.Cards",
+    description: "Physical artist merch with digital content built in.",
+    image: "/images/make-albumcards.jpg",
+    imageAlt: "An Album.Card held up on a beach",
+  },
+
+  {
+    title: "Narrative raves",
+    description: "I write short sci-fi stories and DJ parties built around their worlds.",
+    image: "/images/make-raves.jpg",
+    imageAlt: "DJing in front of a projected illustrated world",
+  }
+
+];

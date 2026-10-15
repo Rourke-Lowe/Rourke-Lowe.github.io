@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Rourke Lowe',
-  description: 'Product Manager based in Canada',
+  description: 'Product Manager based in Victoria, BC. I take ideas from zero to one.',
   icons: {
     icon: '/images/favicon.ico',
   },
