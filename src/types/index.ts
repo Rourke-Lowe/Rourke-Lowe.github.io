@@ -7,15 +7,25 @@ export interface Experience {
     highlights: string[];
   }
 
+  export interface ProjectImage {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  }
+
   export interface Project {
     title: string;
     description: string;
+    // Cropped 4:3 cover on the card
     image: string;
     imageAlt: string;
-    // Uncropped, larger version shown in the project modal
-    detailImage: string;
-    detailWidth: number;
-    detailHeight: number;
+    // Shown in the project modal: the gallery uncropped, plus the longer text
+    gallery: ProjectImage[];
+    meta: string;
+    body: string;
+    role: string;
+    link?: { label: string; href: string };
   }
 
   export interface Achievement {
