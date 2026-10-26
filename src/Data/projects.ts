@@ -16,7 +16,7 @@ export const projects: Project[] = [
     ],
     meta: "Jimmy client · Toronto · 2026",
     body: "A neighbourhood cafe and cinema in Toronto. I built the model for how it scales (cafe, tickets, memberships, break-even by the day), then the website: pick a movie, pick a time, buy. Three clicks, no seat maps. Build done, launch next.",
-    role: "Built the financial model; ran the website project and built alongside Quin (Lab828), who led development",
+    role: "Built the financial model; ran the website project and built alongside Quin, my technical business partner, who led development",
   },
 
   {
